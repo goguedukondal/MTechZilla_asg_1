@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Timer.css'
 import Auth from './Auth';
 function Timer() {
-  const [time, setTime] = useState(1500); // 25 minutes in seconds
+  const [time, setTime] = useState(1500); 
   const [isBreak, setIsBreak] = useState(false);
   const [isRunning, setIsRunning] = useState(false);
 
@@ -35,7 +35,7 @@ function Timer() {
       } else {
         // Break timer completed
         setIsBreak(false);
-        setTime(1500); // Reset to 25 minutes for the next work session
+        setTime(1500); 
       }
     }
   }, [time, isBreak]);
@@ -51,7 +51,7 @@ function Timer() {
   const resetTimer = () => {
     setIsRunning(false);
     setIsBreak(false);
-    setTime(1500); // Reset to 25 minutes
+    setTime(1500); 
   };
 
   const formatTime = (seconds) => {
