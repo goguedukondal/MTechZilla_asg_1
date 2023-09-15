@@ -24,16 +24,16 @@ function Timer() {
 
   useEffect(() => {
     if (time === 0) {
-      // Timer completed
+     
       setIsRunning(false);
 
       if (!isBreak) {
-        // Start the 5-minute break timer
+       
         setTime(300);
         setIsBreak(true);
         setIsRunning(true);
       } else {
-        // Break timer completed
+       
         setIsBreak(false);
         setTime(1500); 
       }
